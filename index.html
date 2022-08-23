@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Simulateur Crédit</title>
+</head>
+<body>
+
+<input type="text" name="Name" value="" placeholder="Nom et Prénoms">
+<input type="email" name="email" value="" placeholder="Adresse email">
+<input type="tel" name="phone" value="" placeholder="Téléphone">
+<select name="typePret">
+    <option value="Crédit d'urgence-Social">Crédit d'urgence-Social</option>
+    <option value="Prêt ordinaire">Prêt ordinaire</option>
+    <option value="Crédit stockage">Crédit stockage</option>
+    <option value="Prêt aux salariés">Prêt aux salariés</option>
+    <option value="Paysan">Paysan</option>
+    <option value="Fonds de roulement">Fonds de roulement</option>
+    <option value="Equipement">Equipement</option>
+</select>
+<input type="text" name="numberMontant" value="" placeholder="Montant souhaité">
+<input type="number" name="numberDuree" value="" placeholder="Durée">
+<button id="calcul"> Calculer </button>
+<h5 id="mtShow" style=""></h5>
+<h5 id="mtDuree" style=""></h5>
+<table border="1px">
+    <thead>
+    <tr>
+        <td>N° Echéance</td>
+       <td>Echéance/Mois</td>
+    </tr>
+    </thead>
+    <tbody class="echeance">
+
+    </tbody>
+</table>
+
+<!--script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/simulator.js"></script>
+</body>
+</html>
